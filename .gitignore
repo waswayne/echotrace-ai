@@ -77,3 +77,13 @@ Desktop.ini
 
 # Local-only overrides
 *.local
+
+# Local Hackathon Lab planning workspace
+/00 Opportunity and Rules/
+/01 Application/
+/02 Ideas and Research/
+/03 Build/
+/04 Demo and Pitch/
+/05 Submission/
+/06 Results and Feedback/
+/90 Archive/

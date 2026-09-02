@@ -327,7 +327,8 @@ These defaults remain subject to user approval before coding.
 When an approved decision changes:
 
 1. Update this document and record the date.
-2. Update the affected build or demo plan.
+2. Update any affected tracked build or demo documentation.
 3. Explain any impact on scope, safety, schedule, and cost.
-4. Preserve superseded major plans in `90 Archive` when traceability matters.
+4. Preserve superseded major plans in the local Hackathon Lab archive when
+   traceability matters; do not republish private planning material by default.
 5. Do not silently broaden the MVP.

@@ -21,8 +21,8 @@ Use this order when project documents disagree:
 1. The user's latest explicit instruction.
 2. This `AGENTS.md` file.
 3. `PROJECT_SOURCE_OF_TRUTH.md`.
-4. `03 Build/BUILD_PLAN.md`.
-5. Other project notes and checklists.
+4. `README.md`.
+5. Other tracked project documentation.
 
 Do not silently resolve a conflict between these sources. Report it and ask.
 
@@ -123,6 +123,8 @@ Initial limits:
 ## Technical Direction After Coding Approval
 
 - Prefer Next.js, React, and TypeScript.
+- Initialize the application at the repository root. The numbered Hackathon Lab
+  planning folders are local-only and must not contain tracked application code.
 - Prefer the managed AssemblyAI Voice Agent API with a direct browser WebSocket.
 - Mint temporary browser tokens from a server-side route.
 - Validate tool payloads and structured model output with Zod or an equivalent
@@ -179,8 +181,8 @@ licenses and limitations, and obtain explicit user approval before submission.
 - Preserve unrelated and previously accepted work.
 - Make narrow, reversible changes and explain material assumptions.
 - Do not regenerate or replace a working application wholesale.
-- Keep plans, architecture, setup, test commands, demo steps, limitations, and
-  decisions in readable Markdown.
+- Keep architecture, setup, test commands, demo steps, limitations, and approved
+  decisions in readable tracked Markdown without republishing local Lab notes.
 - Update `PROJECT_SOURCE_OF_TRUTH.md` when an approved product decision changes.
 - Update the Hackathon Lab tracker when status, deadline, or next action changes.
 - Test the actual deployed submission artifact from a clean browser path.

@@ -34,16 +34,17 @@ Open `PROJECT_SOURCE_OF_TRUTH.md` for the full product and technical plan. Any A
 working in this folder must read `AGENTS.md` and that source-of-truth file before
 taking action.
 
-## Project Map
+## Repository Layout
 
-- `00 Opportunity and Rules`: official sources, verified facts, and rule gaps.
-- `01 Application`: application description and approval checklist.
-- `02 Ideas and Research`: scored product directions and differentiation.
-- `03 Build`: phased plan, technical gates, tests, and later application code.
-- `04 Demo and Pitch`: three-minute golden path and presentation materials.
-- `05 Submission`: final links, permissions, licenses, and approval checklist.
-- `06 Results and Feedback`: outcome, feedback, and retrospective.
-- `90 Archive`: superseded material retained for traceability.
+- `AGENTS.md`: mandatory instructions for AI-assisted work.
+- `PROJECT_SOURCE_OF_TRUTH.md`: approved product, safety, architecture, and scope
+  decisions.
+- `README.md`: public project overview and current status.
+- Application files will be created at the repository root after coding is
+  explicitly approved.
+
+The numbered Hackathon Lab planning folders are retained locally for project
+management but intentionally excluded from the public GitHub repository.
 
 ## Before Coding
 
