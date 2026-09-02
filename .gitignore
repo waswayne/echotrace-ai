@@ -87,3 +87,8 @@ Desktop.ini
 /05 Submission/
 /06 Results and Feedback/
 /90 Archive/
+
+# Local project governance
+/.gitattributes
+/AGENTS.md
+/PROJECT_SOURCE_OF_TRUTH.md

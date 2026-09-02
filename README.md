@@ -1,53 +1,68 @@
-# AssemblyAI Voice Agent Hackathon - EchoTrace AI
+# EchoTrace AI
 
-- Created: 2026-09-02
-- Deadline: 2026-09-30 at 15:00 UTC / 16:00 WAT
-- Official source: https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon
-- Research verified: 2026-09-02
-- Status: Planning - workspace ready; coding not yet approved
-- Owner: Solo project
-- Working product: EchoTrace Safety Debrief
-- Next decision: Approve the product boundary and pre-coding gates.
+> Speak freely. Leave with a clear, traceable account.
 
-## Product In One Sentence
+EchoTrace AI is a voice-first safety debrief assistant that helps people turn
+spoken recollections of workplace incidents and near misses into clear,
+source-linked timelines.
 
-EchoTrace is a voice-first safety debrief assistant that converts one worker's
-spoken recollection of an incident or near miss into a source-linked,
-speaker-reviewed timeline with explicit unknowns and correction history.
+Instead of forcing someone to complete a rigid form while details are still
+fresh, EchoTrace begins with natural narration. It listens, organizes the
+account, notices missing information, and asks neutral follow-up questions. The
+speaker remains in control and can correct, clarify, or leave details unresolved
+before reviewing the final account.
 
-## Important Boundary
+## Why EchoTrace
 
-EchoTrace supports a person in clarifying their own account before formal
-reporting. It does not determine truth, fault, liability, credibility, severity,
-or disciplinary action, and it does not automatically file or send a report.
+Important accounts are often captured under pressure. Events may be remembered
+out of order, times may be approximate, and corrections may emerge later in the
+conversation. A recording preserves the voice, but it does not make the account
+easy to review. A form provides structure, but it can interrupt recall and hide
+how the account developed.
 
-## Current State
+EchoTrace is designed to provide both: natural voice capture and a transparent,
+structured result.
 
-- Discovery and competitor research: complete.
-- Workspace and AI operating instructions: complete.
-- Exact niche and guardrails: recommended; awaiting user confirmation.
-- Application implementation: not started.
-- AssemblyAI configuration: not started.
-- Dependencies, database, authentication, and deployment: not started.
+## How It Works
 
-Open `PROJECT_SOURCE_OF_TRUTH.md` for the full product and technical plan. Any AI
-working in this folder must read `AGENTS.md` and that source-of-truth file before
-taking action.
+1. **Speak naturally** - Describe what happened in your own words.
+2. **See the account take shape** - Important claims and events become a
+   provisional timeline linked to the original conversation.
+3. **Clarify what is missing** - EchoTrace asks one short, neutral question at a
+   time.
+4. **Resolve uncertainty** - Possible discrepancies are shown as items needing
+   clarification, never as proof that someone is being untruthful.
+5. **Review and confirm** - The speaker sees what was captured, what changed,
+   and what remains unknown before confirming the account.
 
-## Repository Layout
+## Built Around Trust
 
-- `AGENTS.md`: mandatory instructions for AI-assisted work.
-- `PROJECT_SOURCE_OF_TRUTH.md`: approved product, safety, architecture, and scope
-  decisions.
-- `README.md`: public project overview and current status.
-- Application files will be created at the repository root after coding is
-  explicitly approved.
+- **Source-linked:** Every structured claim should trace back to what the
+  speaker actually said.
+- **Correction-preserving:** Updates create a visible revision history instead
+  of silently rewriting the original account.
+- **Neutral by design:** Questions should clarify rather than suggest answers.
+- **Honest about uncertainty:** Unknown and approximate details remain explicit.
+- **Human-controlled:** The speaker can interrupt, correct, decline, and review.
+- **Privacy-conscious:** Sensitive voice and transcript data should be collected
+  only with clear consent and minimal retention.
 
-The numbered Hackathon Lab planning folders are retained locally for project
-management but intentionally excluded from the public GitHub repository.
+## What EchoTrace Does Not Do
 
-## Before Coding
+EchoTrace is not an emergency service, lie detector, investigator, or automated
+decision-maker. It does not determine truth, fault, liability, credibility,
+severity, or disciplinary action. It prepares a reviewable account; it does not
+replace trained safety professionals or formal reporting procedures.
 
-The user must approve the niche, product boundary, language and speaker limits,
-recording/retention policy, managed AssemblyAI approach, spending limit, and
-remaining event-specific rules. Planning-document edits do not cross this gate.
+## Technology
+
+EchoTrace is being designed around real-time conversational voice AI, semantic
+turn-taking, interruption handling, structured tool calls, and an
+application-owned evidence ledger. The planned implementation uses AssemblyAI's
+Voice Agent API with a TypeScript and React web application.
+
+## Project Status
+
+EchoTrace is in early development. The initial release will focus on one
+speaker, one fictional safety incident, source-linked claims, neutral
+clarification, correction history, and a final speaker review.
